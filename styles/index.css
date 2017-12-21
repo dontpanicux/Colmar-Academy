@@ -1,0 +1,463 @@
+/* Universal */
+
+body {
+	font-family: Helvetica;
+	margin-top: 0;
+}
+
+.container {
+	max-width: 960px;
+	margin: auto;
+}
+
+.flex {
+	display: flex;
+	
+}
+
+/* TOP LEVEL NAV */
+
+
+.top-nav {
+	display: flex;
+	align-items: center;
+
+	/* This justified menu items right*/
+	justify-content: space-between; 
+	height: 64px;
+	padding: 0 24px;
+
+	border-bottom: 0.5px solid black;
+}
+
+header .logo-name {
+	display: flex;
+}
+
+li {
+	list-style: none;
+	display: inline-flex;
+
+	/* Padding needs to use nth-CSS notation */
+	padding-left: 16px; 
+}
+
+	/*Learn something section*/
+
+.learn-section {
+	background-color: #D8D8D8;
+
+	display: flex;
+	align-items: center;
+
+	width: 100%;
+
+}
+
+.learn-section img  {
+	width: 60%;
+	height: 50%;
+	margin: 32px 24px;
+}
+
+.learn-section-text {
+	flex-direction: row;
+	margin-right: 72px;
+
+}
+
+button {
+	color: white;
+	background-color: #4A4A4A;
+	font-size: 18px;
+	padding: 8px;
+	width: 264px;
+}
+
+/* Get Started Section */
+/*.container .flex div {
+	margin: 32px 24px;
+
+}*/
+
+.practice-section {
+	background-color: #ffffff;
+
+	display: flex;
+	
+
+	width: 100%;
+	flex-direction: row;
+	
+	margin: 32px 24px;
+
+
+
+}
+
+#studying-man {
+	width: 100%;
+	height: 50%;
+	margin-right: 24px;
+
+}
+
+.practice-section-text img  {
+	width: 60%;
+	
+
+	
+}
+
+.practice-section-text {
+	width: 60%;
+
+	margin-bottom: 32px;
+	display: flex;
+	flex-direction: column;
+
+	
+	
+
+}
+
+.practice-cards {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	padding-left: 24px;
+
+
+}
+
+.practice-cards div:nth-of-type(1) {
+	padding-top: 0;
+}
+
+.practice-card {
+	display: flex;
+	align-items: center;
+
+	padding: 16px;
+
+}
+
+.practice-card img {
+	width: 35%;
+	height: auto;
+	/*padding: 16px;*/
+	/*margin: 0;*/
+	padding-right: 16px;
+	margin-bottom: 16px;
+
+}
+
+.mobile-img {
+		display: none;
+	}
+
+.practice-card-text {
+	/*display: block;*/
+	flex-direction: row;
+
+	width: 65%;
+}
+
+.practice-card-text p{
+	margin: 8px 0;
+}
+
+.practice-card-text h3{
+	margin: 0;
+}
+
+#lecture-bkgd {
+	background-color:#D8D8D8 ;
+}
+
+/* Courses */
+
+div.container.course-list {
+	background-color: #D8D8D8;
+
+	display: flex;
+
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.course-list h1 {
+	margin-top: 32px;
+}
+
+.course {
+	background-color: white;
+	margin: 5px;
+
+	width:32%;
+	height: auto;
+}
+
+.course img {
+	height: auto;
+	width: 100%;
+}
+
+.course-text {
+	padding: 16px 16px 24px 16px;
+}
+
+.course-text span {
+	margin: 8px 0;
+}
+
+.courses-container {
+	margin: 32px 72px;
+
+	display: flex;
+
+	max-width: 960px;
+
+	flex-wrap: wrap;
+
+	flex-direction: row;
+}
+
+/* Thesis */
+
+.thesis-video {
+	width: 60%;
+
+	margin: 0 24px;
+}
+
+.thesis-title h1{
+	text-align: center;
+	margin-top: 32px;
+} 
+
+
+.thesis-content {
+	width: 40%;
+	
+}
+
+.thesis-items {
+	background-color: #D8D8D8;
+	padding: 16px;
+	
+	align-items: center;
+	display: flex;
+
+}
+
+.thesis-items img {
+	width: 35%;
+	height: auto;
+	padding: 16px 16px;
+}
+
+.thesis-text p{
+	margin: 8px 0;
+}
+
+.thesis-text {
+	width: 65%;
+}
+
+#white-bkgd {
+	background-color: white;
+}
+
+/* Footer */
+
+footer {
+	border-top: 1px solid #D8D8D8;
+	color: #D8D8D8;
+	
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+
+	justify-content: space-between;
+	
+}
+
+footer h6 {
+	margin: none;
+	padding-left: 24px;
+	font-weight: normal;
+}
+
+.footer-items {
+	font-size: 10px;
+	/*float: right;*/
+	/*padding: 16px 24px;*/
+
+	
+}
+
+/* Media Queries 450px */ 
+
+.mobile-menu {
+	display: none;
+}
+
+@media only screen and (max-width: 700px){
+	.mobile-menu {
+		display: initial;
+
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.logo-name img, .logo-name h1 {
+		display: none;
+	}
+
+	.top-nav {
+		flex-direction: column;
+	}
+
+	.learn-section {
+	
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.learn-section img {
+		margin: 0;
+		width: 100%;
+	}
+
+	.learn-section-text {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: column;
+
+		margin: 32px 16px;
+	}
+
+	.learn-section-text button {
+		background-color: #9B9B9B;
+		padding: 15px 0;
+		width: 100%
+	}
+
+	.practice-section {
+		margin: 0;
+	}
+
+	.practice-section-text {
+		display: none;
+	}
+
+	.practice-cards {
+		padding: 0;
+		width:100%;
+		
+	}
+
+	.practice-card img {
+		align-items: center;
+	}
+	
+	.practice-card {
+		flex-direction: column;
+		margin: 0;
+
+	}
+
+	.practice-card img {
+		padding: 16px;
+	}
+
+	#lecture-bkgd {
+		background-color: white
+	}
+
+	.practice-card-text {
+		margin: 16px;
+		width: 100%;
+	}
+
+	.desktop-img {
+		display: none;
+	}
+
+	.mobile-img {
+		display: initial;
+		
+	}
+
+	img.mobile-img {
+		width: 100%;
+	}
+
+	div.container.course-list {
+		background-color: #FFFFFF;
+
+		border-bottom: 2px solid #E9EAEA;
+	}
+	
+	.container .course-list div {
+		align-items: none;
+	}
+
+	.courses-container {
+		width: 100%;
+		flex-direction: column;
+
+		background-color: #ffffff;
+
+
+	}
+
+	.course {
+		width: 90%;
+		margin-left: 25px;
+
+		background-color: #D8D8D8;
+	}
+
+	.course img  {
+		display: none;
+	}
+
+	.course-text p {
+		display: none;
+	}
+
+	.thesis-video h3, .thesis-video p {
+		display: none;
+	}
+
+	.flex {
+		flex-direction: column;
+	}
+
+	.thesis-video {
+		width: 100%;
+		
+		margin: 0;
+	}
+
+	.thesis-items {
+		display: none;
+	}
+
+	footer {
+		
+		border-top:2px solid #E9EAEA;
+	}
+
+	footer span {
+		display: none;
+	}
+}
+
+
